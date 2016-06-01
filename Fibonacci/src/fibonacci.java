@@ -8,6 +8,7 @@ public class fibonacci
 		printFibonacci(n);
 	}
 	
+	// Reads in a Positive Integer when called and returns said Integer
 	private static int howMany()
 	{
 		Scanner reader = new Scanner(System.in);
@@ -21,8 +22,14 @@ public class fibonacci
 		return number;
 	}
 	
+	//Reads in a Positive integer and provides a list from 0 to the positive Integer 
+	//list of the Fibonacci Chain
 	private static void printFibonacci(int x)
 	{
+		if(x < 0)
+		{
+			System.out.println("Error: Negative Number Given");
+		}
 		int a = 0;
 		int b = 1;
 		int c = 0;
